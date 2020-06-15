@@ -8,7 +8,7 @@ const _ = {
    * @returns {num} Bounded number
    */
   clamp(number, lower, upper){
-    return Math.min(Math.max(number,lower), upper);
+    return Math.min(Math.max(number, lower), upper);
   },
   /**
    * verify if a number exist in between an [lower bound] and ]upper bound[.
@@ -32,13 +32,13 @@ const _ = {
     return isInRange;
   },
   /**
-   * Seperate a words string into a word array.
+   * Seperate a words string into a word array.Only split with ' '.
    * @param {string} string string to split 
    * @returns {array} splitted string
    */
   words(string){
     return string.split(' ')
-  }
+  },
 };
 
 
