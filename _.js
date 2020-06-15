@@ -39,6 +39,12 @@ const _ = {
   words(string){
     return string.split(' ')
   },
+  /**
+   * add a space pad on both side of a string.
+   * @param {*} string string to pad
+   * @param {*} length Length of string with pads
+   * @returns {string} Padded String
+   */
   pad(string, length){
     let pad = 0;
     let left = 0;
