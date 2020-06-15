@@ -10,6 +10,13 @@ const _ = {
   clamp(number, lower, upper){
     return Math.min(Math.max(number,lower), upper);
   },
+  /**
+   * verify if a number exist in between an [lower bound] and ]upper bound[.
+   * @param {num} number number to check range
+   * @param {num} start inclusive lower bound
+   * @param {num} end non-inclusive upper bound
+   * @returns {bool} Result if in range or not
+   */
   inRange(number, start, end){
     let temp = 0;
     let isInRange = false;
