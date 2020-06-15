@@ -31,6 +31,11 @@ const _ = {
     isInRange = number >= start && number < end;
     return isInRange;
   },
+  /**
+   * Seperate a words string into a word array.
+   * @param {string} string string to split 
+   * @returns {array} splitted string
+   */
   words(string){
     return string.split(' ')
   }
