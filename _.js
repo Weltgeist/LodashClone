@@ -30,6 +30,9 @@ const _ = {
     }
     isInRange = number >= start && number < end;
     return isInRange;
+  },
+  words(string){
+    return string.split(' ')
   }
 };
 
