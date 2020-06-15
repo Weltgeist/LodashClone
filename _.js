@@ -39,6 +39,22 @@ const _ = {
   words(string){
     return string.split(' ')
   },
+  pad(string, length){
+    let pad = 0;
+    let left = 0;
+    let right = 0;
+    let paddedString = '';
+    let padChar = ' '; 
+    if(string.length > length){
+      return string;
+    } else {
+      pad = length - string.length;
+      left = Math.floor(pad/2);
+      right = Math.ceil(pad/2); 
+      paddedString = padChar.repeat(left) + string + padChar.repeat(right);
+      return paddedString;
+    }
+  }
 };
 
 
