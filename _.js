@@ -97,6 +97,12 @@ const _ = {
     }
     return undefined;
   },
+  /**
+   * drops/shifts elements from start of array, returns new array.
+   * @param {array} arr arr to work on
+   * @param {int} num number of elements to shift
+   * @returns {array}  sliced array
+   */
   drop(arr,num){
     let narr = [];
     if(typeof num === 'undefined') num = 1;
