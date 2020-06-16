@@ -60,6 +60,9 @@ const _ = {
       paddedString = padChar.repeat(left) + string + padChar.repeat(right);
       return paddedString;
     }
+  },
+  has(object,key){
+    return !(typeof object[key] === 'undefined');
   }
 };
 
