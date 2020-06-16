@@ -83,6 +83,12 @@ const _ = {
     }
     return invertedObject;
   },
+  /**
+   * Find 1st key whose value is a truthy output of a predictive function.
+   * @param {*} object object to search
+   * @param {*} func predicate function
+   * @returns {*} truthy value if key is found or undefined
+   */
   findKey(object, func){
     let pass = false;
     for (key in object){
