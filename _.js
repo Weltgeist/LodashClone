@@ -124,6 +124,16 @@ const _ = {
     if (dropNum === -1) dropNum = arr.length; 
     narr = this.drop(arr, dropNum);
     return narr;
+  },
+  chunk(arr,size){
+    let narr = [];
+    let carr = [];
+    if (typeof size === 'undefined') size = 1;
+    for (let i = 0; i < arr.length; i = i + size ) {
+      carr = arr.slice(i,i+size)
+      narr.push(carr);
+    }
+    return narr;
   }
 };
 
