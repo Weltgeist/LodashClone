@@ -61,6 +61,12 @@ const _ = {
       return paddedString;
     }
   },
+  /**
+   * verify if an object's key has a value.
+   * @param {object} object object to check
+   * @param {string} key  key with value to verify
+   * @returns {bool} has value or not
+   */
   has(object,key){
     return !(typeof object[key] === 'undefined');
   }
