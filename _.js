@@ -125,6 +125,12 @@ const _ = {
     narr = this.drop(arr, dropNum);
     return narr;
   },
+  /**
+   * subdivide array into chunks of specified size. if uneven, rest is in last chunk.
+   * @param {array} arr array to subdivide in chunks
+   * @param {int} size size of chunks
+   * @returns {array} chunked array
+   */
   chunk(arr,size){
     let narr = [];
     let carr = [];
