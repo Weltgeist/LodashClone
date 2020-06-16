@@ -110,6 +110,12 @@ const _ = {
     narr = arr.slice(num);
     return narr;
   },
+  /**
+   * drops/shifts elements from start of array until it finds a falsy values respecting predicate function.
+   * @param {*} arr array to work on
+   * @param {*} predicate predicate function(element,index,arr)
+   * @returns {arr} dropped array respecting predicate function 
+   */
   dropWhile(arr, predicate){
     let narr = [];
     let dropNum = 0;
