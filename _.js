@@ -70,6 +70,11 @@ const _ = {
   has(object,key){
     return !(typeof object[key] === 'undefined');
   },
+  /**
+   * invert each key,value par of a  object in a non-mutatively way.
+   * @param {object} object object to invert
+   * @returns inverted object
+   */
   invert(object){
     let invertedObject = {};
     for (key in object) {
