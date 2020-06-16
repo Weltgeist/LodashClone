@@ -109,6 +109,15 @@ const _ = {
     if(num > arr.length) num = arr.length;
     narr = arr.slice(num);
     return narr;
+  },
+  dropWhile(arr, predicate){
+    let narr = [];
+    let dropNum = 0;
+    if (typeof predicate === 'undefined') return;
+    dropNum = arr.findIndex((element,index) => !predicate(element,index,arr));
+    if (dropNum === -1) dropNum = arr.length; 
+    narr = this.drop(arr, dropNum);
+    return narr;
   }
 };
 
