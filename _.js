@@ -96,6 +96,13 @@ const _ = {
       if (pass) return key;
     }
     return undefined;
+  },
+  drop(arr,num){
+    let narr = [];
+    if(typeof num === 'undefined') num = 1;
+    if(num > arr.length) num = arr.length;
+    narr = arr.slice(num);
+    return narr;
   }
 };
 
